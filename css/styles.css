@@ -39,10 +39,15 @@ html{
     text-align: center;
     color: #fff;
     width: 30rem;
+    transition: left 0.8s;
 }
 .banner h1{
     font-size: 4rem;
     margin-bottom: 3rem;
+}
+
+.container.chang .banner{
+    left: 5rem;
 }
 .banner p{
     font-size: 2rem;
@@ -57,6 +62,7 @@ html{
     top: 0;
     left: 0;
     z-index: 50;
+    transition: width 1.5s cubic-bezier(.19, 1, .22, 1);
 }
 
 .green-bg button{
@@ -75,6 +81,12 @@ html{
 
 }
 
+.container.chang .green-bg{
+    width: 40%;
+
+
+}
+
 .signup-form{
     width: 60rem;
     height: 100%;
@@ -86,7 +98,14 @@ html{
     justify-content: space-around;
     align-items: center;
     padding: 10rem 0;
+    transition: left 1.5s cubic-bezier(0.19, 1, 0.22, 1);
 }
+
+.container.chang .signup-form{
+    left: 40rem;
+}
+
+
 .signup-form h1{
     font-size: 4rem;
     color: #3aaf9f;
